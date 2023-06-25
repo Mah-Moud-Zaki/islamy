@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bakground_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".Screens.MainScreen.Quran.Qraan">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/quranToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:elevation="8dp"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:foregroundGravity="center"
+            android:textSize="32sp"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:text="@string/qraanTitle"/>
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:hint="@string/searchSurah"
+        android:textColorHint="@color/white"
+        android:shadowColor="@color/black"
+        android:elevation="12dp"
+        android:drawableTint="@color/white"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/searchFilter"/>
+
+    <ListView
+        android:id="@+id/surah_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/text_color"
+        android:dividerHeight="1px"
+        android:fillViewport="true"
+        android:padding="5dp" />
+
+</LinearLayout>

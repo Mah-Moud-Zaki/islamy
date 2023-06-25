@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "601719452430",
+    "project_id": "islamy-8f7b6",
+    "storage_bucket": "islamy-8f7b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601719452430:android:e2e68ddc05838cb960dd5f",
+        "android_client_info": {
+          "package_name": "com.bfcai.islamy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601719452430-l3g89pnvl1jb0hsu6ue1e3gdnmloe5gb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUOeHt0p0-73OeXbbm7seAVjBdJUj0SoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601719452430-l3g89pnvl1jb0hsu6ue1e3gdnmloe5gb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

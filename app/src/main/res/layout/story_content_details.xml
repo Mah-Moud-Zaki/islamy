@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bakground_color"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Screens.MainScreen.Stories.Components.storyDetailsActivity"
+        tools:showIn="@layout/activity_story_details">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/storyToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_Color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:elevation="8dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:foregroundGravity="center"
+                android:textSize="26sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/stories"/>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:id="@+id/imagePost"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/noteTitleContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:isScrollContainer="true"
+            android:padding="18dp"
+            android:scrollbars="vertical"
+            android:text="TextVieww"
+            android:textColor="@color/text_color"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePost"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/noteDetailsContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:isScrollContainer="true"
+            android:padding="18dp"
+            android:scrollbars="vertical"
+            android:text="TextView"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noteTitleContent"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

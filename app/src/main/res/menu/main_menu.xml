@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/tasabyhPage"
+        android:icon="@drawable/tasabeh"
+        android:title="@string/tasabyh"
+        />
+    <item android:id="@+id/adayaPage"
+        android:icon="@drawable/doaa"
+        android:title="@string/adaya"/>
+    <item android:id="@+id/azkarElsabahPage"
+        android:icon="@drawable/azkar_elsabah"
+        android:title="@string/azkarElsabah"/>
+    <item android:id="@+id/azkarElmasaaPage"
+        android:icon="@drawable/azkar_elmasaa"
+        android:title="@string/azkarElmasaa"/>
+    <item android:id="@+id/malomatPage"
+        android:icon="@drawable/malomat"
+        android:title="@string/malomatDenya"/>
+</group>
+
+    <group android:checkableBehavior="single" >
+
+        <item android:title="@string/Setting">
+            <menu>
+                <item
+                    android:id="@+id/darkMode"
+                    android:title="@string/NightMode"
+                    android:icon="@drawable/ic_baseline_wb_sunny_24"
+                    app:actionLayout="@layout/theme_switch"
+                    />
+                <item android:id="@+id/translate"
+                    android:title="@string/changeLanguage"
+                    android:icon="@drawable/ic_baseline_g_translate_24"
+                    />
+                <item android:id="@+id/aboutApp"
+                    android:title="@string/aboutApp"
+                    android:icon="@drawable/ic_baseline_info_24"
+                    />
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="@string/Share">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="@string/shareApp" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="@string/rateApp" />
+        </menu>
+    </item>
+
+</menu>
